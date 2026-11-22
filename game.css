@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #10151f;
+}
+
+.scene {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  width: 100%;
+  max-width: 750px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(8, 13, 23, 0.84);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #f2c66d;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e1e5ec;
+}
+
+.eyebrow {
+  color: #f2c66d;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+a.choice {
+  display: block;
+  padding: 16px 20px;
+  border: 1px solid #d5ad5d;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.07);
+  transition: background 0.2s, transform 0.2s;
+}
+
+a.choice:hover {
+  background: #8d6b2d;
+  transform: translateY(-2px);
+}
+
+.small {
+  margin-top: 28px;
+  font-size: 0.85rem;
+  color: #b6becb;
+}
+
+.home { background-image: linear-gradient(#10151f88,#10151fbb), url("images/entrance.jpg"); }
+.intro { background-image: linear-gradient(#10151f88,#10151fbb), url("images/platform.jpg"); }
+.wait { background-image: linear-gradient(#10151f88,#10151fbb), url("images/bench.jpg"); }
+.stranger { background-image: linear-gradient(#10151f88,#10151fbb), url("images/stranger.jpg"); }
+.investigate { background-image: linear-gradient(#10151f88,#10151fbb), url("images/note.jpg"); }
+.discovery { background-image: linear-gradient(#10151f88,#10151fbb), url("images/clue.jpg"); }
+.escape { background-image: linear-gradient(#10151f88,#10151fbb), url("images/train.jpg"); }
+.kindness { background-image: linear-gradient(#10151f88,#10151fbb), url("images/help.jpg"); }
+
+@media (max-width: 600px) {
+  .content {
+    padding: 25px 18px;
+  }
+}
